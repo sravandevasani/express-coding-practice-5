@@ -1,0 +1,32 @@
+GET http://localhost:3000/movies/
+###
+
+POST http://localhost:3000/movies/
+Content-Type: application/json
+
+{
+  "directorId": 6,
+  "movieName": "Jurassic Park",
+  "leadActor": "Jeff Goldblum"
+}
+###
+GET http://localhost:3000/movies/46/
+###
+
+PUT http://localhost:3000/movies/52/
+Content-Type: application/json
+
+{
+  "directorId": 46,
+  "movieName": "Swarnakamalam",
+  "leadActor": "Venki Daggubatu"
+}
+###
+
+DELETE http://localhost:3000/movies/52/
+###
+
+GET http://localhost:3000/directors/
+###
+
+GET http://localhost:3000/directors/46/movies/
